@@ -44,9 +44,11 @@ url = charge.data.authorization_url
 gateway.Transaction.verify(charge.data.reference)
 
 # check docs module for more intergration examples
+
 ```
 
 ## Developing
+  ## using Virtualenv
 
 1. Create a [virtualenv](https://virtualenv.pypa.io/) called `venv`:
 
@@ -65,5 +67,37 @@ gateway.Transaction.verify(charge.data.reference)
    ```
    pip3 install -r dev_requirements.txt
    ```
+   
+   ## Using pipenv
+  
+ 1. install pipenv:
+ 
+    ```
+    pip3 install pipenv
+    ```
+     
+ 2. create a folder:
+ 
+    ```
+    mkdir <folder_name> && cd <folder_name>
+    ```
+ 3. activate pipenv environment in new folder:
+ 
+    ```
+    pipenv .
+    ```
+    
+ 4. activate the virtual environment:
+ 
+    ```
+    pipenv shell
+    ```
+    
+ 5. install dependencies:
+ 
+    ```
+    pipenv install -r requirements.txt
+    ```
+ 
 
 See the [LICENSE](LICENSE) file for more info.
