@@ -48,56 +48,56 @@ gateway.Transaction.verify(charge.data.reference)
 ```
 
 ## Developing
-  ## using Virtualenv
+ ## using Virtualenv
 
-1. Create a [virtualenv](https://virtualenv.pypa.io/) called `venv`:
+  1. Create a [virtualenv](https://virtualenv.pypa.io/) called `venv`:
 
-   ```
-   virtualenv venv
-   ```
+       ```
+       virtualenv venv
+       ```
 
-2. Start the virtualenv:
+  2. Start the virtualenv:
 
-   ```
-   source venv/bin/activate
-   ```
+       ```
+       source venv/bin/activate
+       ```
 
-3. Install dependencies:
+  3. Install dependencies:
 
-   ```
-   pip3 install -r dev_requirements.txt
-   ```
+       ```
+       pip3 install -r dev_requirements.txt
+       ```
    
-   ## Using pipenv
+ ## Using pipenv
   
- 1. install pipenv:
+   1. install pipenv:
  
-    ```
-    pip3 install pipenv
-    ```
+        ```
+        pip3 install pipenv
+        ```
      
- 2. create a folder:
+   2. create a folder:
  
-    ```
-    mkdir <folder_name> && cd <folder_name>
-    ```
- 3. activate pipenv environment in new folder:
+        ```
+        mkdir <folder_name> && cd <folder_name>
+        ```
+   3. activate pipenv environment in new folder:
  
-    ```
-    pipenv .
-    ```
+        ```
+        pipenv .
+        ```
     
- 4. activate the virtual environment:
+   4. activate the virtual environment:
  
-    ```
-    pipenv shell
-    ```
+        ```
+        pipenv shell
+        ```
     
- 5. install dependencies:
+   5. install dependencies:
  
-    ```
-    pipenv install -r requirements.txt
-    ```
- 
+        ```
+        pipenv install -r requirements.txt
+        ```
+     
 
 See the [LICENSE](LICENSE) file for more info.
