@@ -1,0 +1,2 @@
+class paystackError(Exception):
+    pass
