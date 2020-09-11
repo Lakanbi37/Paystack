@@ -1,2 +1,3 @@
-from gateways.transaction_gateway import TransactionGateway
-from gateways.split_gateway import TransactionSplit
+from gateways.transactions import TransactionGateway
+from gateways.payment_splits import TransactionSplit
+from gateways.gateway import BaseGateway

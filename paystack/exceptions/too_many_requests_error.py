@@ -2,6 +2,6 @@ from exceptions.paystack_error import paystackError
 
 class TooManyRequestsError(paystackError):
     """
-    Raised when the rate limit request threshold is exceeded.
+    Raised when the rate limit api threshold is exceeded.
     """
     pass

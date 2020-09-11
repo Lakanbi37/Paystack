@@ -1,7 +1,6 @@
 import paystack
 from paystack.exceptions import ConfigurationError
-import paystack.paystack_gateway
-import paystack.request.http_request
+import paystack.api.http
 
 
 class Configuration:
@@ -31,7 +30,7 @@ class Configuration:
 
     @staticmethod
     def gateway():
-        return paystack.paystack_gateway.PaystackGateway(config=Configuration.instantiate())
+        return paystack.PaystackGateway(config=Configuration.instantiate())
 
     def http(self):
-        return paystack.request.http_request.Http(secret_key=self.secret_key, timeout=self.timeout)
+        return paystack.api.http.Http(secret_key=self.secret_key, timeout=self.timeout)

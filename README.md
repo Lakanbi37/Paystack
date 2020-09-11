@@ -84,7 +84,7 @@ gateway.Transaction.verify(charge.data.reference)
    3. activate pipenv environment in new folder:
  
         ```
-        pipenv .
+        pipenv -p python 3
         ```
     
    4. activate the virtual environment:
