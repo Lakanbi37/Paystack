@@ -24,7 +24,7 @@ test_secret_key = "sk_test_<YOUR_SECRET_KEY>"
 test_public_key = "pk_test_<YOUR_PUBLIC_KEY>"
 
 
-gateway = paystack.paystack_gateway.PaystackGateway(
+gateway = paystack.PaystackGateway(
     secret_key=test_secret_key,
     public_key=test_public_key,
 )
